@@ -1,0 +1,14 @@
+prefix=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a/
+exec_prefix=${prefix}
+libdir=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a//lib
+includedir=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.14.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

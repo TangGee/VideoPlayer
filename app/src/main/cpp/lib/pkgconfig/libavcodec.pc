@@ -1,0 +1,14 @@
+prefix=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a/
+exec_prefix=${prefix}
+libdir=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a//lib
+includedir=/home/tlinux/media/ffmpeg-4.0.2-android/armv7a//include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.18.100
+Requires: libavutil >= 56.14.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
