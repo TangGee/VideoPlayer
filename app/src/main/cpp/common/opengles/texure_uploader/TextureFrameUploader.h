@@ -31,7 +31,7 @@ public:
     TextureFrameUploader();
     ~TextureFrameUploader();
 
-    virtual bool init(int width,int height);
+    virtual void init(int width,int height);
     virtual bool updateTexImage(VideoFrame *videoFrame);
 };
 

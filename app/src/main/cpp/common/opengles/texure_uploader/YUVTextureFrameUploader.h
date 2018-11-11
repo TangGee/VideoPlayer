@@ -15,7 +15,7 @@ public:
     YUVTextureFrameUploader();
     virtual ~YUVTextureFrameUploader();
 
-    bool init(int width,int height);
+    void init(int width,int height);
 };
 
 

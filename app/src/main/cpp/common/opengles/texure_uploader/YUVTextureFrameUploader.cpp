@@ -18,7 +18,7 @@ YUVTextureFrameUploader::~YUVTextureFrameUploader() {
     TextureFrameUploader::~TextureFrameUploader();
 }
 
-bool YUVTextureFrameUploader::init(int width, int height) {
+void YUVTextureFrameUploader::init(int width, int height) {
     TextureFrameUploader::init(width,height);
     textureFrame = new YUVTextureFrame;
     textureFrame->createTexture();
